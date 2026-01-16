@@ -1,4 +1,4 @@
-package com.kssasarma;
+package com.kssasarma.models;
 
 import com.kssasarma.notifications.EmailNotificationStrategy;
 import com.kssasarma.notifications.NotificationStrategy;

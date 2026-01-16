@@ -1,0 +1,25 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.versions
+pom.xml.bak
+pom.xml.releaseBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+builddirectory/
+# Some editors (e.g. IntelliJ) might create files with .iml extension
+*.iml
+
+# Eclipse
+.classpath
+.project
+.settings/
+# VS Code
+.vscode/
+# IntelliJ
+.idea/
+
+# OS-specific
+.DS_Store
+*.log

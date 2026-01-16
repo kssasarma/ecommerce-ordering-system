@@ -1,8 +1,10 @@
-package com.kssasarma;
+package com.kssasarma.models;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import com.kssasarma.costcalculators.BaseCost;
+import com.kssasarma.costcalculators.CostCalculator;
 import com.kssasarma.payments.PaymentStrategy;
 import com.kssasarma.state.NewState;
 import com.kssasarma.state.State;
@@ -27,7 +29,7 @@ public class Order {
 	}
 
 	public void pay(PaymentStrategy payment, CostCalculator calculator) {
-		payment.pay(calculateTotal());
+		payment.pay(calculator.calculateCost());
 		state.onPaid();
 	}
 

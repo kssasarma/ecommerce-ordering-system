@@ -1,4 +1,4 @@
-package com.kssasarma;
+package com.kssasarma.models;
 
 public class Product {
 

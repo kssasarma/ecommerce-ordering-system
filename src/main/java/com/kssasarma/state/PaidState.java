@@ -1,6 +1,6 @@
 package com.kssasarma.state;
 
-import com.kssasarma.Order;
+import com.kssasarma.models.Order;
 
 public class PaidState extends State {
 
