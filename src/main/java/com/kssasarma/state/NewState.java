@@ -7,13 +7,12 @@ public class NewState extends State {
 	public NewState(Order order) {
 		super(order);
 		System.out.println("Order is in New State");
-		order.notifyUser("SHIPPED");
+		order.notifyUser("CREATED");
 	}
 
 	@Override
 	public void onNew() {
 		System.out.println("Order is already in New State");
-
 	}
 
 	@Override

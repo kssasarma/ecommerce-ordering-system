@@ -11,13 +11,29 @@ public class Order {
 	List<Product> products = new ArrayList<>();
 	User owner;
 
-	public State state = new NewState(this);
+	private State state = new NewState(this);
 
 	public void changeState(State state) {
 		this.state = state;
 	}
 
+	public Order(User owner) {
+		this.owner = owner;
+	}
+
 	public void notifyUser(String status) {
 		owner.update("Order status changed to: " + status);
+	}
+
+	public void pay() {
+		state.onPaid();
+	}
+
+	public void ship() {
+		state.onShipped();
+	}
+
+	public void deliver() {
+		state.onDelivered();
 	}
 }
